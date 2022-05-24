@@ -1,0 +1,23 @@
+syntax enable
+set background=dark
+let g:solarized_termcolors= 256
+let g:solarized_termtrans = 1
+let g:solarized_degrade   = 1
+let g:solarized_bold      = 1
+let g:solarized_underline = 1
+let g:solarized_italic    = 1
+let g:solarized_contrast  ="normal" 
+let g:solarized_visibility="normal" 
+call plug#begin('~/AppData/Local/nvim/plugged')
+" below are some vim plugins for demonstration purpose.
+" add the plugin you want to use here.
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
+call plug#end()
+
+colorscheme solarized
