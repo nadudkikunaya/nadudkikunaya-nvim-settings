@@ -14,4 +14,5 @@
   - npm i
   
  
-  
+  WSL npm error
+  https://stackoverflow.com/questions/39311147/cannot-run-npm-commands
