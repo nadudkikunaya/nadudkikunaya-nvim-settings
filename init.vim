@@ -13,7 +13,9 @@ set background=dark
 " airline theme
 let g:airline_theme='base16_spacemacs'
 let g:rainbow_active = 1
-let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_jsdoc = 0
+let g:neosnippet#enable_completed_snipppet = 0
+let g:jedi#show_call_signatures = 1 
 " indent
 :set number
 :set list lcs=tab:\|\     
@@ -26,7 +28,7 @@ let g:javascript_plugin_jsdoc = 1
 map <F2> :NERDTreeToggle<CR>
 map <C-L> gt
 map <C-H> gT
-map <Tab> :GFiles<CR> 
+map <Tab> :FZF<CR> 
 
 " parentheses
 "inoremap { {}<Esc>i
@@ -44,27 +46,27 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
-Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline' 
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
-Plug 'flazz/vim-colorschemes'
 Plug 'yggdroot/indentline'
-Plug 'elzr/vim-json'
-Plug 'matze/vim-move'
+" Plug 'elzr/vim-json'
+" Plug 'matze/vim-move'
 Plug 'neoclide/coc.nvim'
+Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'moll/vim-node'
 Plug 'dense-analysis/ale'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'jaxbot/semantic-highlight.vim'
-Plug 'frazrepo/vim-rainbow'
+" Plug 'pangloss/vim-javascript'
+" Plug 'mxw/vim-jsx'
+" Plug 'jaxbot/semantic-highlight.vim'
+" Plug 'frazrepo/vim-rainbow'
 Plug 'davidhalter/jedi-vim'
-"Plug 'wookiehangover/jshint.vim'
-Plug 'felixge/vim-nodejs-errorformat'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'wookiehangover/jshint.vim'
+" Plug 'felixge/vim-nodejs-errorformat'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
